@@ -1,0 +1,72 @@
+@import 'var';
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Public Sans', sans-serif;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9rem;
+    .logo {
+        width: 30vw;
+        padding: 38px;
+        margin-right: 5px;
+        .logo-center {
+            margin: auto;
+            width: fit-content;
+        }
+    }
+    .nav-opt {
+        width: 40vw;
+        padding: 38px;
+        margin-right: 5px;
+        color: $GrayishBlue;
+    }
+    .invites {
+        width: 30vw;
+        padding: 20px;
+        margin-right: 5px;
+        .bttn {
+            margin: auto;
+            width: fit-content;
+            padding: 1rem;
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+            background-image: linear-gradient(to right, $LimeGreen, $BrightCyan);
+            border-radius: 2rem;
+            color: $White;
+            font-weight: 700;
+        }
+    }
+    li {
+        display: inline-block;
+        margin-right: 1.5rem;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+main {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    section {
+        height: 80vh;
+    }
+    .light {
+        background: $LightGrayishBlue;
+    }
+    .lighter {
+        background: $VeryLightGray;
+    }
+    
+}

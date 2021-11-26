@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: 'Public Sans', sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 0.9rem;
+}
+
+nav .logo {
+  width: 30vw;
+  padding: 38px;
+  margin-right: 5px;
+}
+
+nav .logo .logo-center {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+nav .nav-opt {
+  width: 40vw;
+  padding: 38px;
+  margin-right: 5px;
+  color: #9698a6;
+}
+
+nav .invites {
+  width: 30vw;
+  padding: 20px;
+  margin-right: 5px;
+}
+
+nav .invites .bttn {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+main {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section {
+  height: 80vh;
+}
+
+main .light {
+  background: #f3f4f6;
+}
+
+main .lighter {
+  background: #fafafa;
+}
