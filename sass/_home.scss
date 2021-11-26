@@ -1,0 +1,156 @@
+main {
+    min-height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    section {
+        min-height: 80vh;
+        max-width: 100%;
+        padding-left: 9.57vw;
+        line-height: 1.67;
+    }
+    .intro {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+    }
+    .brief {
+        display: inline-block;
+        width: 35%;
+        height: fit-content;
+        line-height: 1.67;
+        margin: 20vh 0;
+        h1 {
+            font-weight: 300;
+            font-size: 3rem;
+            line-height: 1.3;
+            color: $DarkBlue;
+        }
+        p {
+            color: $GrayishBlue;
+        }
+        .bttn {
+            margin-top: 1rem;
+            width: fit-content;
+            padding: 0.5rem;
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+            background-image: linear-gradient(to right, $LimeGreen, $BrightCyan);
+            border-radius: 2rem;
+            color: $White;
+            font-weight: 700;
+        }
+    }
+    .background {
+        display: inline-block;
+        width: 65%;
+        margin: 0;
+        background-image: url(../images/bg-intro-desktop.svg);
+        background-position-y: -16rem;
+
+    }
+    .light {
+        background: $LightGrayishBlue;
+    }
+    .lighter {
+        background: $VeryLightGray;
+    }
+    
+}
+.easybank {
+    width: 50%;
+    padding-top: 6rem;
+    p {
+        color: $GrayishBlue;
+        padding-top: 1.5rem;
+    }
+}
+.second-heading {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.3;
+    color: $DarkBlue;
+}
+.third-heading {
+    color: $DarkBlue;
+    font-weight: 400;
+}
+.easybank-pros {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-right: 9.57rem;
+    .pros {
+        text-align: left;
+        width: 25%;
+        padding-left: 0;
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+        .icon {
+            padding-top: 2.5rem;
+            padding-bottom: 1.5rem;
+        }
+    }
+    p {
+        color: $GrayishBlue;
+        padding-top: 1rem;
+    }
+}
+.article-head {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+.articles {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-right: 9.57rem;
+    .latest {
+        width: 25%;
+        padding-left: 0;
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+    .write-up {
+        background-color: $White;
+        padding: 1rem;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .article-image {
+        width: 100%;
+        height: 15rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .image-1 {
+        background-image: url(../images/image-currency.jpg);
+    }
+    .image-2 {
+        background-image: url(../images/image-restaurant.jpg);
+    }
+    .image-3 {
+        background-image: url(../images/image-plane.jpg);
+    }
+    .image-4 {
+        background-image: url(../images/image-confetti.jpg);
+    }
+}
+.writer {
+    font-size: 0.6rem;
+}
+.topic {
+    color: $DarkBlue;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+.content {
+    font-size: 0.7rem;
+    color: $GrayishBlue;
+    margin-top: 1rem;
+}

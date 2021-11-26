@@ -1,9 +1,221 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+main {
+  min-height: 80vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section {
+  min-height: 80vh;
+  max-width: 100%;
+  padding-left: 9.57vw;
+  line-height: 1.67;
+}
+
+main .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+}
+
+main .brief {
+  display: inline-block;
+  width: 35%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  line-height: 1.67;
+  margin: 20vh 0;
+}
+
+main .brief h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1.3;
+  color: #2d314d;
+}
+
+main .brief p {
+  color: #9698a6;
+}
+
+main .brief .bttn {
+  margin-top: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
+main .background {
+  display: inline-block;
+  width: 65%;
+  margin: 0;
+  background-image: url(../images/bg-intro-desktop.svg);
+  background-position-y: -16rem;
+}
+
+main .light {
+  background: #f3f4f6;
+}
+
+main .lighter {
+  background: #fafafa;
+}
+
+.easybank {
+  width: 50%;
+  padding-top: 6rem;
+}
+
+.easybank p {
+  color: #9698a6;
+  padding-top: 1.5rem;
+}
+
+.second-heading {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3;
+  color: #2d314d;
+}
+
+.third-heading {
+  color: #2d314d;
+  font-weight: 400;
+}
+
+.easybank-pros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding-right: 9.57rem;
+}
+
+.easybank-pros .pros {
+  text-align: left;
+  width: 25%;
+  padding-left: 0;
+}
+
+.easybank-pros .pros:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.easybank-pros .pros .icon {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.easybank-pros p {
+  color: #9698a6;
+  padding-top: 1rem;
+}
+
+.article-head {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding-right: 9.57rem;
+}
+
+.articles .latest {
+  width: 25%;
+  padding-left: 0;
+}
+
+.articles .latest:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.articles .write-up {
+  background-color: white;
+  padding: 1rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.articles .article-image {
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.articles .image-1 {
+  background-image: url(../images/image-currency.jpg);
+}
+
+.articles .image-2 {
+  background-image: url(../images/image-restaurant.jpg);
+}
+
+.articles .image-3 {
+  background-image: url(../images/image-plane.jpg);
+}
+
+.articles .image-4 {
+  background-image: url(../images/image-confetti.jpg);
+}
+
+.writer {
+  font-size: 0.6rem;
+}
+
+.topic {
+  color: #2d314d;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.content {
+  font-size: 0.7rem;
+  color: #9698a6;
+  margin-top: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -53,7 +265,7 @@ nav .nav-opt {
 
 nav .invites {
   width: 30vw;
-  padding: 20px;
+  padding: 30px;
   margin-right: 5px;
 }
 
@@ -62,7 +274,7 @@ nav .invites .bttn {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1rem;
+  padding: 0.5rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
@@ -79,27 +291,4 @@ nav li {
 
 nav li a {
   text-decoration: none;
-}
-
-main {
-  min-height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main section {
-  height: 80vh;
-}
-
-main .light {
-  background: #f3f4f6;
-}
-
-main .lighter {
-  background: #fafafa;
 }

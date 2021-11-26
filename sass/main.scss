@@ -1,10 +1,12 @@
 @import 'var';
+@import 'home';
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body {
     display: flex;
@@ -33,12 +35,12 @@ nav {
     }
     .invites {
         width: 30vw;
-        padding: 20px;
+        padding: 30px;
         margin-right: 5px;
         .bttn {
             margin: auto;
             width: fit-content;
-            padding: 1rem;
+            padding: 0.5rem;
             padding-right: 1.5rem;
             padding-left: 1.5rem;
             background-image: linear-gradient(to right, $LimeGreen, $BrightCyan);
@@ -54,19 +56,4 @@ nav {
             text-decoration: none;
         }
     }
-}
-main {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    section {
-        height: 80vh;
-    }
-    .light {
-        background: $LightGrayishBlue;
-    }
-    .lighter {
-        background: $VeryLightGray;
-    }
-    
 }
